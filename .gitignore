@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/RPLSPAPIRepo/v17/.wsuo
+/.vs/VSWorkspaceState.json
+/RockPaperScissorsSpockLizard/.vs
+/RockPaperScissorsSpockLizard/bin/Debug/net6.0
+/RockPaperScissorsSpockLizard/obj
+/RockPaperScissorsSpockLizard.UnitTests/bin/Debug/net6.0
+/RockPaperScissorsSpockLizard.UnitTests/obj
