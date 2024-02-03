@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "47ea6417-e539-41e6-92f3-83f1ec26cc48",
+		"name": "RPLPS API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22946289"
+	},
+	"item": [
+		{
+			"name": "GetChoices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseApiRPLPSURL}}/choices",
+					"host": [
+						"{{baseApiRPLPSURL}}"
+					],
+					"path": [
+						"choices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetChoice",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseApiRPLPSURL}}/choice",
+					"host": [
+						"{{baseApiRPLPSURL}}"
+					],
+					"path": [
+						"choice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Play",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Player\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseApiRPLPSURL}}/play",
+					"host": [
+						"{{baseApiRPLPSURL}}"
+					],
+					"path": [
+						"play"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetScorebaordLatestResults(10 default)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseApiRPLPSURL}}/scoreboard/latest",
+					"host": [
+						"{{baseApiRPLPSURL}}"
+					],
+					"path": [
+						"scoreboard",
+						"latest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetScorebaordLatestResults(number is defined) Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseApiRPLPSURL}}/scoreboard/latest?number=5",
+					"host": [
+						"{{baseApiRPLPSURL}}"
+					],
+					"path": [
+						"scoreboard",
+						"latest"
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Scoreboard",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseApiRPLPSURL}}/scoreboard/reset",
+					"host": [
+						"{{baseApiRPLPSURL}}"
+					],
+					"path": [
+						"scoreboard",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseApiRPLPSURL",
+			"value": "https://localhost:44345",
+			"type": "string"
+		}
+	]
+}
